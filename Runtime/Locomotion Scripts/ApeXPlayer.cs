@@ -1,5 +1,7 @@
 using UnityEngine;
 
+using ApeX.Input;
+
 namespace ApeX
 {
     public class ApeXPlayer : MonoBehaviour
@@ -51,6 +53,9 @@ namespace ApeX
 
             SetDrives(leftHandJoint);
             SetDrives(rightHandJoint);
+
+            ApeXInputs.CacheInputDevice(UnityEngine.XR.XRNode.LeftHand);
+            ApeXInputs.CacheInputDevice(UnityEngine.XR.XRNode.RightHand);
         }
 
         void FixedUpdate()

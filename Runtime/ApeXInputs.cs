@@ -7,7 +7,12 @@ namespace ApeX.Input
 {
     public static class ApeXInputs
     {
-        private static readonly Dictionary<XRNode, InputDevice> nodeMap;
+        private static readonly Dictionary<XRNode, InputDevice> nodeMap = new Dictionary<XRNode, InputDevice> 
+        {
+            {XRNode.LeftHand, new InputDevice()},
+            {XRNode.RightHand, new InputDevice()}
+        };
+
         private static XRNode Controller(bool leftHand) => leftHand ? XRNode.LeftHand : XRNode.RightHand;
 
         public static bool TriggerDown(bool leftHand, float threshold = 0.5f) => GetValue(CommonUsages.trigger, Controller(leftHand)) >= threshold;
@@ -93,7 +98,7 @@ namespace ApeX.Input
                 Debug.LogWarning("<color=lightblue>[XRInputs]</color> No device found at given XRNode!");
                 return new InputDevice();
             }
-            nodeMap[node] = nodeDevice;
+            nodeMap.Add(node, nodeDevice);
             return nodeDevice;
         }
         #endregion

@@ -1,14 +1,12 @@
-using System.Collections.Generic;
-
 using UnityEngine;
 using UnityEditor;
 
 using ApeX.Extentions;
 
-namespace ApeX.Editor
+namespace ApeX
 {
     [CustomEditor(typeof(ApeXPlayer))]
-    public class ApeXEditor : UnityEditor.Editor
+    public class ApeXEditor : Editor
     {
         private ApeXPlayer targetLoco;
 
