@@ -250,6 +250,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 430285556866155478, guid: fff58f294ca3ce2459cc90f22620939a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 430285557273465589, guid: fff58f294ca3ce2459cc90f22620939a, type: 3}
       propertyPath: m_Name
       value: ApeX Rig
