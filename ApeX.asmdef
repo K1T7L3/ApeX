@@ -1,0 +1,27 @@
+{
+    "name": "ApeX",
+    "rootNamespace": "ApeX",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [
+        "Kepler",
+        "macOSStandalone",
+        "Switch2",
+        "Switch",
+        "PS4",
+        "PS5",
+        "QNX",
+        "tvOS",
+        "VisionOS",
+        "GameCoreXboxOne",
+        "XboxOne",
+        "GameCoreScarlett"
+    ],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
