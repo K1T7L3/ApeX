@@ -19,5 +19,13 @@
   "changelogUrl": "https://example.com/changelog.html",
   "documentationUrl": "https://example.com/",
   "licensesUrl": "https://example.com/licensing.html",
-  "hideInEditor": false
+  "hideInEditor": false,
+
+  "samples": [
+    {
+      "displayName": "Sample Rig",
+      "description": "Contains a basic Sample Rig",
+      "path": "Samples/ApeX Sample"
+    }
+  ]
 }

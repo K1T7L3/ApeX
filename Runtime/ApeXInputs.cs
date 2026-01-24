@@ -239,6 +239,7 @@ namespace ApeX.Input
         }
 
         /// <summary>
+        /// Gets a Vector3 value from an xr device.
         /// </summary>
         /// <param name="feature">The feature you want to read.</param>
         /// <param name="node">The node you want to read from.</param>

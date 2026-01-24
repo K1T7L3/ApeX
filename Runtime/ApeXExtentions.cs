@@ -1,9 +1,12 @@
 using UnityEngine;
-using UnityEditor;
 
-namespace ApeX.Extentions
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
+namespace ApeX.Extentions.Runtime
 {
-    public static class ApeXExtentions
+    public static class ApeXRuntimeExt
     {
         /// <summary>
         /// Searches through objects to the corresponding component.
@@ -24,10 +27,16 @@ namespace ApeX.Extentions
             found = c.GetComponentInParent<T>();
             return found;
         }
+    }
+}
 
+#if UNITY_EDITOR
+namespace ApeX.Extentions.Editor
+{
+    public static class ApeXEditorExt
+    {
         // Adapted from S_Darkwell on unity fourms
         // https://discussions.unity.com/t/adding-layer-by-script/407882/16
-
         /// <summary>
         /// Create a layer at the next available index. Returns silently if layer already exists.
         /// </summary>
@@ -98,3 +107,4 @@ namespace ApeX.Extentions
         }
     }
 }
+#endif

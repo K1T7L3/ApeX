@@ -1,7 +1,8 @@
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 
-using ApeX.Extentions;
+using ApeX.Extentions.Editor;
 
 namespace ApeX
 {
@@ -40,9 +41,10 @@ namespace ApeX
 
             if (GUILayout.Button("Setup Layers"))
             {
-                ApeXExtentions.CreateLayer("Player", 20);
-                ApeXExtentions.CreateLayer("Grab", 21);
+                ApeXEditorExt.CreateLayer("Player", 20);
+                ApeXEditorExt.CreateLayer("Grab", 21);
             }
         }
     }
 }
+#endif
