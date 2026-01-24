@@ -367,8 +367,32 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 430285557519011101, guid: fff58f294ca3ce2459cc90f22620939a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 735005650}
   m_SourcePrefab: {fileID: 100100000, guid: fff58f294ca3ce2459cc90f22620939a, type: 3}
+--- !u!1 &735005649 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 430285557519011101, guid: fff58f294ca3ce2459cc90f22620939a, type: 3}
+  m_PrefabInstance: {fileID: 735005648}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &735005650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735005649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c4aa23264614e4bba4226da16630c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ApeX::ApeX.SeatController
+  bounds: {x: 0, y: 0, z: 0}
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1968298198
 GameObject:
   m_ObjectHideFlags: 0

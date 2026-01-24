@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ApeX
 {
-    public class ApeXSeat : MonoBehaviour
+    public interface Seat
     {
 
         void Update()

@@ -4,6 +4,7 @@ using ApeX.Input;
 
 namespace ApeX
 {
+    [AddComponentMenu("ApeX/Player", 3)]
     public class ApeXPlayer : MonoBehaviour
     {
         public Rigidbody playerRigidbody;
@@ -83,32 +84,35 @@ namespace ApeX
 
         public void SetDrives(ConfigurableJoint joint)
         {
-            joint.xDrive = handDrive.drive();
-            joint.yDrive = handDrive.drive();
-            joint.zDrive = handDrive.drive();
-            joint.slerpDrive = handDrive.drive();
+            joint.xDrive = handDrive;
+            joint.yDrive = handDrive;
+            joint.zDrive = handDrive;
+            joint.slerpDrive = handDrive;
         }
     }
 }
 
 [System.Serializable]
-public class SerializedJointDrive
+public struct SerializedJointDrive
 {
     public float spring;
     public float damper;
     public bool useAcceleration;
 
-    public JointDrive drive()
+    public readonly JointDrive ToDrive()
     {
-        JointDrive tempDrive = new();
-
-        tempDrive.maximumForce = Mathf.Infinity;
-        tempDrive.positionSpring = spring;
-        tempDrive.positionDamper = damper;
-        tempDrive.useAcceleration = useAcceleration;
+        JointDrive tempDrive = new()
+        {
+            maximumForce = Mathf.Infinity,
+            positionSpring = spring,
+            positionDamper = damper,
+            useAcceleration = useAcceleration
+        };
 
         return tempDrive;
     }
+
+    public static implicit operator JointDrive(SerializedJointDrive drive) => drive.ToDrive();
 }
 
 public enum TurningMode

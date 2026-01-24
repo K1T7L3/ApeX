@@ -21,7 +21,7 @@ namespace ApeX
 
         public void Update()
         {
-            float turnValue = ApeXInputs.Thumbstick(false).x;
+            float turnValue = ApeXInputs.ThumbstickValue(false).x;
             Turn(turningMode, turnDegrees, turnValue);
         }
 
