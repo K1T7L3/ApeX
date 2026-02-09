@@ -1,7 +1,11 @@
 {
     "name": "ApeX.Samples",
-    "rootNamespace": "ApeX",
-    "references": [],
+    "rootNamespace": "ApeX.Samples",
+    "references": [
+        "GUID:3472c51b23e2979458b2d58b292bf6e5",
+        "GUID:15a1a642f1ca56b408f5687e4b7b07d5",
+        "GUID:5ef11c79355d2c7439841522fec0952b"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [
         "Kepler",

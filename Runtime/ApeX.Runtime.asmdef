@@ -1,7 +1,9 @@
 {
     "name": "ApeX.Runtime",
     "rootNamespace": "ApeX",
-    "references": [],
+    "references": [
+        "GUID:b76f829eadaf1694ca98810bec391bb8"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [
         "Kepler",

@@ -1,10 +1,7 @@
 {
-    "name": "ApeX.Editor",
-    "rootNamespace": "ApeX.Editor",
-    "references": [
-        "GUID:3472c51b23e2979458b2d58b292bf6e5",
-        "GUID:5ef11c79355d2c7439841522fec0952b"
-    ],
+    "name": "ApeX.Assets",
+    "rootNamespace": "ApeX",
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [
         "Kepler",

@@ -2,8 +2,9 @@ using UnityEngine;
 
 using ApeX.Input;
 
-namespace ApeX
+namespace ApeX.Grabbing
 {
+    [AddComponentMenu("ApeX/Grabbing/Grabber")]
     public class Grabber : MonoBehaviour
     {
         public bool editorInput;
@@ -18,7 +19,7 @@ namespace ApeX
 
         Collider[] returnedColliders;
 
-        GrabObject grabbedObject;
+        GrabObjectBase grabbedObject;
         FixedJoint _joint;
 
         void Update()
@@ -31,10 +32,10 @@ namespace ApeX
 
                 if (returnedColliders[0])
                 {
-                    if (returnedColliders[0].GetComponent<GrabObject>())
-                        grabbedObject = returnedColliders[0].GetComponent<GrabObject>();
+                    if (returnedColliders[0].GetComponent<GrabObjectBase>())
+                        grabbedObject = returnedColliders[0].GetComponent<GrabObjectBase>();
                     else
-                        grabbedObject = returnedColliders[0].GetComponentInParent<GrabObject>();
+                        grabbedObject = returnedColliders[0].GetComponentInParent<GrabObjectBase>();
 
                     _joint = gameObject.AddComponent<FixedJoint>();
                     isGrabbing = true;
@@ -62,8 +63,6 @@ namespace ApeX
 
                             _joint.anchor = grabbedObject.grabAnchor.position;
                         }
-
-                        grabbedObject.onGrab.Invoke();
                     }
 
                     if (returnedColliders[0].attachedRigidbody)
@@ -98,7 +97,6 @@ namespace ApeX
 
                 grabbedObject.grabbedHand = Hand.none;
                 grabbedObject.grabbed = false;
-                grabbedObject.onLetGo.Invoke();
                 grabbedObject = null;
             }
         }
