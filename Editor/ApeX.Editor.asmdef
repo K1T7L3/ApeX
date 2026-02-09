@@ -6,20 +6,7 @@
         "GUID:5ef11c79355d2c7439841522fec0952b"
     ],
     "includePlatforms": [],
-    "excludePlatforms": [
-        "Kepler",
-        "macOSStandalone",
-        "Switch2",
-        "Switch",
-        "PS4",
-        "PS5",
-        "QNX",
-        "tvOS",
-        "VisionOS",
-        "GameCoreXboxOne",
-        "XboxOne",
-        "GameCoreScarlett"
-    ],
+    "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
