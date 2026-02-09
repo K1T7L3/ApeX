@@ -6,7 +6,6 @@
   "unityRelease": "1f1",
   "description": "ApeX is a Generalized VR Physics Rig for any kind of game",
   "dependencies": {
-    "com.unity.test-framework": "1.6.0",
     "com.unity.xr.interaction.toolkit": "3.3.0",
     "com.unity.xr.management": "4.5.4",
     "com.unity.animation.rigging": "1.4.0"
