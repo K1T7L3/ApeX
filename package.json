@@ -22,8 +22,8 @@
   "samples": [
     {
       "displayName": "ApeX Gorilla Sample",
-      "description": "Download this if you do not know how to set up a Rig by yourself.",
-      "path": "Samples/GorillaSample.unitypackage"
+      "description": "An ApeX Rig that uses the Hand Based Locomotion style.",
+      "path": "Samples~/Gorilla Sample"
     }
   ]
 }
