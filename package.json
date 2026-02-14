@@ -23,7 +23,7 @@
     {
       "displayName": "ApeX Gorilla Sample",
       "description": "An ApeX Rig that uses the Hand Based Locomotion style.",
-      "path": "Samples~/Gorilla Sample"
+      "path": "Samples/GorillaSample"
     }
   ]
 }
