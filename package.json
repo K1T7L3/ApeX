@@ -11,14 +11,8 @@
     "com.unity.animation.rigging": "1.4.0"
   },
   "author": {
-    "name": "K1T7L3",
-    "url": "http://www.example.com",
-    "email": "example@email.com"
+    "name": "K1T7L3"
   },
-  "changelogUrl": "https://example.com/changelog.html",
-  "documentationUrl": "https://example.com/",
-  "licensesUrl": "https://example.com/licensing.html",
-  "hideInEditor": false,
   "samples": [
     {
       "displayName": "ApeX Gorilla Sample",
